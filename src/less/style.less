@@ -3,6 +3,9 @@
 @import "modal";
 @import "flexbox";
 @import "helpclass";
+@import "../../node_modules/swiper/swiper";
+@import '../../node_modules/swiper/modules/navigation/navigation';
+@import '../../node_modules/swiper/modules/pagination/pagination';
 
 body {
   font-family: "Montserrat", sans-serif;
@@ -19,6 +22,14 @@ body {
   box-sizing: border-box;
 }
 
+h2 {
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 28px;
+  text-align: center;
+  color: #424242;
+}
+
 .wrapper {
   .df;
   width: 100%;
@@ -27,12 +38,268 @@ body {
   .fc;
 }
 
+.trigger-block {
+  padding: 45px 40px 50px;
+  background: #FFFFFF;
+  box-shadow: -2px 2px 20px rgba(66, 66, 66, 0.15);
+  border-radius: 4px;
+  .df;
+  .vc;
+  .jb;
+
+  .item {
+    .center;
+    width: 195px;
+
+    .t1 {
+      font-weight: bold;
+      font-size: 45px;
+      color: #55A630;
+      margin-bottom: 6px;
+    }
+
+    .t2 {
+      font-size: 23px;
+      line-height: 28px;
+      color: #424242;
+    }
+  }
+}
+
+.slider-wrap-block {
+  position: relative;
+}
+
+.btn-navigation {
+  .sw-btn {
+    position: absolute;
+    top: 38%;
+
+    &.rainbow-prev {
+      left: -30px;
+    }
+
+    &.rainbow-next {
+      right: -30px;
+    }
+  }
+}
+
+.card-rainbow-slider {
+  overflow: hidden;
+}
+
+.lesson-card {
+  background: #FFFFFF;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.05);
+  width: 360px;
+  position: relative;
+
+  &.purple {
+
+    .t2 {
+      color: #4340B4;
+    }
+
+    .t3 {
+      background: #4340B4;
+    }
+
+    .t5 {
+      .tt1 {
+        border-left: 2px solid #5351C4;
+      }
+    }
+
+    button {
+      background: #4340B4;
+    }
+
+    a {
+      color: #4340B4;
+      background: rgba(83, 81, 196, 0.1);
+    }
+  }
+
+  &.green {
+
+    .t2 {
+      color: #55A630;
+    }
+
+    .t3 {
+      background: #55A630;
+    }
+
+    .t5 {
+      .tt1 {
+        border-left: 2px solid #55A630;
+      }
+    }
+
+    button {
+      background: #55A630;
+    }
+
+    a {
+      color: #55A630;
+      background: #ECF9EB;
+    }
+  }
+
+  &.blue {
+
+    .t2 {
+      color: #1D8195;
+    }
+
+    .t3 {
+      background: #00A896;
+    }
+
+    .t5 {
+      .tt1 {
+        border-left: 2px solid #00A896;
+      }
+    }
+
+    button {
+      background: #00A896;
+    }
+
+    a {
+      color: #00A896;
+      background: rgba(0, 168, 150, 0.1);
+    }
+  }
+
+  &:before {
+    content: url('@img/bird.svg');
+    position: absolute;
+    right: 14px;
+    top: 16px;
+  }
+
+  .card {
+
+    .t1 {
+      font-weight: 600;
+      font-size: 18px;
+      color: #424242;
+      opacity: 0.8;
+      padding: 0 12px 0 23px;
+      margin-top: 20px;
+    }
+
+    .t2 {
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 100%;
+      letter-spacing: -0.4px;
+      padding: 0 12px 0 23px;
+      margin: 14px 0 23px;
+    }
+
+    .t3 {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 20px;
+      color: #FFFFFF;
+      opacity: 0.8;
+      width: 166px;
+      height: 39px;
+      .dfc;
+      border-radius: 9px;
+      margin-left: 23px;
+    }
+
+    .t4 {
+      font-weight: 600;
+      font-size: 20px;
+      color: #424242;
+      opacity: 0.8;
+      padding: 0 12px 0 23px;
+      margin-top: 21px;
+    }
+
+    .t5 {
+      padding: 0 13px 0px 20px;
+      .df;
+      .jb;
+      align-items: flex-end;
+
+      .tt1 {
+        font-size: 15px;
+        line-height: 24px;
+        color: #424242;
+        opacity: 0.8;
+        width: 158px;
+        padding-left: 9px;
+        margin-bottom: 10px;
+      }
+
+      img {
+        margin: 0;
+        position: relative;
+        right: -5px;
+      }
+    }
+
+    .t6 {
+      font-size: 18px;
+      line-height: 20px;
+      color: #424242;
+      opacity: 0.8;
+      padding: 0 16px;
+      margin: 55px 0 19px;
+    }
+
+    button {
+      height: 56px;
+      width: 100%;
+      .dfc;
+      font-weight: 600;
+      font-size: 20px;
+      color: #FFFFFF;
+    }
+
+    a {
+      height: 56px;
+      width: 100%;
+      .dfc;
+      font-weight: 600;
+      font-size: 20px;
+    }
+  }
+}
+
+.sl-pg {
+  margin-top: 75px;
+  .df;
+  .jc;
+  gap: 9px;
+
+  span {
+    width: 15px;
+    height: 15px;
+    .r50;
+
+    &.swiper-pagination-bullet {
+      background: #B7ECB1;
+      opacity: 1;
+    }
+
+    &.swiper-pagination-bullet-active {
+      background: #55A630;
+    }
+  }
+}
 
 header {
   background: #FFFFFF;
 
   .line1 {
-    padding: 12px 0 11px;
+    padding: 11px 0 12px;
     border-bottom: 1px solid rgba(85, 166, 48, 0.5);
 
     .block {
@@ -109,7 +376,7 @@ header {
         .df;
         .jb;
         .vc;
-        padding: 23px 0;
+        padding: 22px 0 21px;
 
         li {
           a {
@@ -133,10 +400,11 @@ footer {
 
   .block {
     position: relative;
-    padding: 71px 0 138px;
+    padding: 70px 0 136px;
 
     .text-block {
       position: relative;
+
       .t1 {
         font-weight: 600;
         font-size: 20px;
@@ -151,6 +419,7 @@ footer {
         width: 500px;
         position: relative;
         left: -5px;
+        padding-top: 10px;
       }
 
       .t3 {
@@ -195,7 +464,86 @@ footer {
   }
 }
 
+.sec2 {
+  padding-bottom: 177px;
+  background-image: url('@img/sec2bg.svg');
+  background-repeat: no-repeat;
+  background-position: right top;
 
+  .trigger-block {
+    margin-top: -23px;
+    margin-bottom: 175px;
+  }
+
+  .card-rainbow-slider {
+    margin-top: 77px;
+  }
+}
+
+.sec3 {
+  .block {
+    .df;
+    .jb;
+
+    .img-block {
+      width: 590px;
+      height: 666px;
+      flex-shrink: 0;
+      .ibg;
+    }
+
+    .txt-block {
+      padding-left: 121px;
+
+      .t1 {
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 28px;
+        color: #858585;
+      }
+
+      .t2 {
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 107%;
+        letter-spacing: -0.4px;
+        margin: 30px 0 75px;
+
+        span {
+          display: block;
+          color: #55A630;
+        }
+      }
+
+      .t3 {
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 28px;
+        color: #424242;
+        margin-bottom: 60px;
+        padding-right: 30px;
+        p {
+          margin-bottom: 20px;
+        }
+      }
+
+      a {
+        .df;
+        .vc;
+        .je;
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 28px;
+        color: #55A630;
+        text-align: right;
+        img {
+          margin-left: 48px;
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
 
 
 
