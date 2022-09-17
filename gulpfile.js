@@ -30,10 +30,10 @@ console.log(html);
 // Наблюдатель за изменениями в файлах
 function watcher() {
     gulp.watch(path.watch.files, copy);
-    gulp.watch(path.watch.html, html);
+    gulp.watch(path.watch.html, { usePolling: true }, html);
     gulp.watch(path.watch.less, { usePolling: true }, less);
-    gulp.watch(path.watch.js, js);
-    gulp.watch(path.watch.images, images);
+    gulp.watch(path.watch.js, { usePolling: true }, js);
+    gulp.watch(path.watch.images, { usePolling: true }, images);
 }
 
 export { svgSprive }
