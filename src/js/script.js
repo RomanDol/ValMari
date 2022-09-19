@@ -1,4 +1,4 @@
-// ======================== Slider =============================
+// ======================== Sliders =============================
 import Swiper, { Navigation, Pagination } from 'swiper';
 Swiper.use([Navigation, Pagination]);
 
@@ -55,4 +55,21 @@ const swiper3 = new Swiper('.sale-slider', {
         clickable: true,
     }
 });
-// =============================================================
+// ====================== end Sliders =========================
+
+// ====================== Accoerdion =========================
+
+let accordeon = document.querySelectorAll('.descr button');
+
+accordeon.forEach(element => {
+    let parent = element.closest(".content");
+    let verticalLine = element.querySelector(".vertical-line");
+    let programWrapper = parent.querySelector('.program-wrapper');
+
+    element.addEventListener('click', function (e) {
+        if (programWrapper) programWrapper.classList.toggle('dn');
+        if (verticalLine) verticalLine.classList.toggle('dn');
+    });
+});
+
+// ====================== end Accoerdion ======================
