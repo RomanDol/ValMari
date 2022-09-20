@@ -8,6 +8,7 @@ const swiper = new Swiper('.card-rainbow-slider', {
     slidesPerView: 3,
     spaceBetween: 55,
     loop: true,
+
     navigation: {
         nextEl: '.rainbow-next',
         prevEl: '.rainbow-prev',
@@ -26,6 +27,7 @@ const swiper2 = new Swiper('.master-class-slider', {
     slidesPerView: 2,
     spaceBetween: 153,
     loop: true,
+
     navigation: {
         nextEl: '.master-class-next',
         prevEl: '.master-class-prev',
@@ -44,6 +46,7 @@ const swiper3 = new Swiper('.sale-slider', {
     slidesPerView: 3,
     spaceBetween: 30,
     loop: true,
+
     navigation: {
         nextEl: '.sale-next',
         prevEl: '.sale-prev',
@@ -51,6 +54,20 @@ const swiper3 = new Swiper('.sale-slider', {
 
     pagination: {
         el: '.sale-pagination',
+        type: 'bullets',
+        clickable: true,
+    }
+});
+// =============================================================
+const courseSlider = new Swiper('.how-slider', {
+    observer: true,
+    observeParents: true,
+    slidesPerView: 3,
+    // spaceBetween: 35,
+    loop: true,
+
+    pagination: {
+        el: '.how-pagination',
         type: 'bullets',
         clickable: true,
     }
