@@ -1914,56 +1914,6 @@ h2 {
   right: 14px;
   top: 16px;
 }
-.lesson-card .video-block {
-  height: 242px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  position: relative;
-}
-.lesson-card .video-block img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.lesson-card .video-block:before {
-  background: rgba(66, 66, 66, 0.5);
-  opacity: 0.6;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  top: 0;
-  content: '';
-  position: absolute;
-  z-index: 1;
-}
-.lesson-card .video-block button {
-  position: relative;
-  border-radius: 50%;
-  z-index: 1;
-}
-.lesson-card .video-block .vtxt {
-  margin-top: 16px;
-  position: relative;
-  font-weight: 500;
-  font-size: 18px;
-  color: #FFFFFF;
-  opacity: 0.8;
-  z-index: 1;
-}
 .lesson-card .card .t1 {
   font-weight: 600;
   font-size: 18px;
@@ -2519,6 +2469,65 @@ footer .block .contact .politic {
   line-height: 26px;
   color: #424242;
   padding: 0 8px;
+}
+.video-block {
+  min-height: 242px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+}
+.video-block img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.video-block:before {
+  background: rgba(66, 66, 66, 0.5);
+  opacity: 0.6;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  content: '';
+  position: absolute;
+  z-index: 1;
+}
+.video-block button {
+  position: relative;
+  border-radius: 50%;
+  z-index: 1;
+}
+.video-block .vtxt {
+  margin-top: 16px;
+  position: relative;
+  font-weight: 500;
+  font-size: 18px;
+  color: #FFFFFF;
+  opacity: 0.8;
+  z-index: 1;
+}
+.page-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 52px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #424242;
 }
 .sec1 {
   background: #ECFFEB;
@@ -3313,6 +3322,94 @@ footer .block .contact .politic {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+}
+.video-btn {
+  width: 320px;
+  height: 55px;
+  background: #55A630;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 26px;
+  color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.video-top {
+  padding: 85px 0;
+}
+.video-top .block {
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.video-top .block .txt {
+  margin-right: 47px;
+}
+.video-top .block .txt .t1 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+  color: #55A630;
+}
+.video-top .block .txt .t2 {
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 50px;
+  color: #424242;
+  margin: 11px 0 71px;
+}
+.video-top .block .txt .t3 {
+  margin-bottom: 13px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+  color: #55A630;
+}
+.video-top .block .video-block {
+  flex-shrink: 0;
+  width: 589px;
+  height: 403px;
+}
+.video-all {
+  padding: 98px 0 23px;
+}
+.video-all .block {
+  margin-top: 72px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.video-all .block .item {
+  width: 487px;
+  margin-bottom: 141px;
+}
+.video-all .block .item .video-block {
+  height: 333px;
+}
+.video-all .block .item .txt-block {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  color: #424242;
+  margin: 40px 0 46px;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .container {
