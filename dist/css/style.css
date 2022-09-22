@@ -3460,6 +3460,253 @@ footer .block .contact .politic {
 .special-offer .nav-links {
   padding: 76px 0;
 }
+.about-top .block {
+  padding: 36px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.about-top .block .txt {
+  font-weight: 600;
+  font-size: 39px;
+  line-height: 57px;
+  text-transform: uppercase;
+  color: #55A630;
+  margin-right: 49px;
+}
+.about-top .block .img-block {
+  flex-shrink: 0;
+  width: 589px;
+  height: 452px;
+  position: relative;
+}
+.about-top .block .img-block img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.title-green {
+  font-weight: 600;
+  font-size: 35px;
+  text-align: center;
+  color: #55A630;
+}
+.about-text {
+  padding: 38px 0;
+}
+.about-text .block {
+  margin: 0 auto;
+  padding: 60px 14px 30px 25px;
+  width: 1036px;
+  background: #FFFFFF;
+  box-shadow: 10px 10px 10px rgba(207, 207, 207, 0.25);
+}
+.about-text .block p {
+  margin-bottom: 34px;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 34px;
+  color: #424242;
+  opacity: 0.8;
+}
+.about-comfort {
+  padding: 141px 0 168px;
+}
+.about-comfort .block {
+  margin-top: 82px;
+}
+.about-comfort .block .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.about-comfort .block .item:not(:last-child) {
+  margin-bottom: 75px;
+}
+.about-comfort .block .item:nth-child(odd) .img {
+  margin-right: 122px;
+}
+.about-comfort .block .item:nth-child(even) .img {
+  margin-left: 122px;
+  order: 1;
+}
+.about-comfort .block .item .img {
+  width: 488px;
+  height: 396px;
+  flex-shrink: 0;
+}
+.about-comfort .block .item .txt {
+  margin-top: 37px;
+}
+.about-comfort .block .item .txt .t1 {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 26px;
+  color: #424242;
+  opacity: 0.8;
+  position: relative;
+  margin-bottom: 77px;
+}
+.about-comfort .block .item .txt .t1:before {
+  content: '';
+  background-color: #55A630;
+  width: 133px;
+  height: 2px;
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+}
+.about-comfort .block .item .txt .t2 p {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 33px;
+  color: #424242;
+  opacity: 0.8;
+  margin-bottom: 30px;
+}
+.about-progress {
+  padding: 69px 0 174px;
+  background: #ECF9EB;
+  box-shadow: 0px 10px 10px rgba(240, 240, 240, 0.25);
+}
+.about-progress .title-green {
+  margin-bottom: 70px;
+}
+.about-trainers {
+  padding: 60px 0;
+}
+.about-trainers .block {
+  margin-top: 86px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.about-trainers .block .item {
+  width: 285px;
+}
+.about-trainers .block .item .img {
+  height: 380px;
+  position: relative;
+  margin-bottom: 20px;
+}
+.about-trainers .block .item .img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.about-trainers .block .item .t1 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 26px;
+  color: #424242;
+}
+.about-trainers .block .item .t2 {
+  font-size: 15px;
+  line-height: 23px;
+  color: #1C1E23;
+  opacity: 0.8;
+}
+.about-review {
+  position: relative;
+  padding: 120px 0 175px;
+}
+.about-review .block {
+  /* width */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+  background: #ECF9EB;
+  margin-top: 85px;
+  height: 1048px;
+  overflow-y: scroll;
+  padding: 70px 25px 70px 104px;
+}
+.about-review .block::-webkit-scrollbar {
+  width: 22px;
+}
+.about-review .block::-webkit-scrollbar-track {
+  background: #F0F0F0;
+}
+.about-review .block::-webkit-scrollbar-thumb {
+  background: #55A630;
+  border-radius: 6px;
+}
+.about-review .block::-webkit-scrollbar-thumb:hover {
+  background: #55A630;
+}
+.about-review .block .item {
+  margin-bottom: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.about-review .block .item .txt {
+  flex-grow: 0;
+  width: 746px;
+  font-size: 16px;
+  line-height: 28px;
+  color: #1C1E23;
+  opacity: 0.8;
+}
+.about-review .block .item .name {
+  flex-grow: 0;
+  font-size: 18px;
+  color: #424242;
+}
+.about-review .block .item .name .t2 {
+  margin-top: 14px;
+  opacity: 0.8;
+}
+.about-review .block .item:last-child {
+  margin-bottom: 130px;
+}
+.about-review .block .leave-review {
+  background: #ECF9EB;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: calc(100% - 22px);
+  height: 200px;
+}
+.about-review .block .leave-review button {
+  margin: 83px auto;
+  width: 285px;
+  height: 66px;
+  background: #55A630;
+  font-weight: 600;
+  font-size: 18px;
+  color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
 @media (min-width: 992px) and (max-width: 1199px) {
   .container {
     width: 970px !important;
