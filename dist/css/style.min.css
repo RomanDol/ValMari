@@ -2547,6 +2547,47 @@ footer .block .contact .politic {
   opacity: 0.8;
   z-index: 1;
 }
+.lister {
+  display: flex;
+  height: 43px;
+  background: #FFFFFF;
+  border: 1px solid #C7F8C2;
+  box-shadow: 0px 4px 4px rgba(202, 202, 202, 0.1);
+  margin-bottom: 75px;
+}
+.lister li {
+  cursor: pointer;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 16px;
+  color: #1C1E23;
+  flex-grow: 1;
+}
+.lister li:not(:last-child) {
+  border-right: 1px solid #C7F8C2;
+}
+.lister li:hover {
+  color: #55A630;
+}
+.lister li.active {
+  background: #B7ECB1;
+}
+.all-title {
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 43px;
+  text-align: center;
+  color: #424242;
+  margin-bottom: 77px;
+}
 .sec1 {
   background: #ECFFEB;
 }
@@ -3706,6 +3747,16 @@ footer .block .contact .politic {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+}
+.time-table {
+  padding: 75px 0 80px;
+}
+.time-table .top-lister {
+  display: inline-flex;
+  margin-bottom: 53px;
+}
+.time-table .top-lister li {
+  width: 285px;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .container {
