@@ -3758,6 +3758,101 @@ footer .block .contact .politic {
 .time-table .top-lister li {
   width: 285px;
 }
+.price-block {
+  padding: 69px 0;
+}
+.price-block .price-table {
+  background: #F8F8F8;
+  padding: 0 30px 0 63px;
+  font-size: 18px;
+  color: #424242;
+}
+.price-block .price-table .td {
+  flex-grow: 0;
+}
+.price-block .price-table .td a {
+  text-decoration-line: underline;
+}
+.price-block .price-table .td a:hover {
+  color: #55A630;
+}
+.price-block .price-table .w60 {
+  width: 60px;
+  text-align: center;
+  margin-left: 32px;
+}
+.price-block .price-table .w100 {
+  width: 400px;
+  margin-right: auto;
+}
+.price-block .price-table .w150 {
+  width: 150px;
+  text-align: left;
+  margin-left: 44px;
+}
+.price-block .price-table .w150.b-bird {
+  position: relative;
+}
+.price-block .price-table .w150.b-bird:before {
+  content: url('../img/b-bird.svg');
+  position: absolute;
+  top: -15px;
+  right: 25px;
+}
+.price-block .price-table .table-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 116px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.price-block .price-table .table-item {
+  border-top: 1px solid #B5B5B5;
+  padding: 16px 0 25px;
+}
+.price-block .price-table .table-item .table-row {
+  padding: 15px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.price-block .price-table .table-item .table-row:first-child {
+  padding: 17px 0;
+  font-weight: 600;
+  font-size: 18px;
+  color: #424242;
+}
+.price-block .price-table .table-item .table-row:first-child .w100 {
+  font-size: 22px;
+}
+.price-block .price-table .table-item .table-row .w100 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.price-block .price-table .table-item .table-row .w100 .num {
+  width: 42px;
+  flex-shrink: 0;
+}
+.price-block .txt-note {
+  margin: 78px 0 30px;
+  background: #ECF9EB;
+  font-size: 22px;
+  min-height: 55px;
+  color: #424242;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
 @media (min-width: 992px) and (max-width: 1199px) {
   .container {
     width: 970px !important;

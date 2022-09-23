@@ -12,8 +12,8 @@ export const less = () => {
     return app.gulp.src(app.path.src.less, { sourcemaps: app.isDev })
         .pipe(app.plugins.plumber(
             app.plugins.notify.onError({
-                title: "SCSS",
-                message: "Error <%= error.message %>"
+                // title: "LESS",
+                message: "LESS Error <%= error.message %>"
             })))
         .pipe(app.plugins.replace(/.header/g, '/* 12345*/ .header'))
         .pipe(gulpless())
