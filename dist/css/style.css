@@ -2588,6 +2588,24 @@ footer .block .contact .politic {
   color: #424242;
   margin-bottom: 77px;
 }
+.all-post {
+  padding: 75px 0 175px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.all-post a {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 26px;
+  color: #55A630;
+}
 .sec1 {
   background: #ECFFEB;
 }
@@ -3951,6 +3969,57 @@ footer .block .contact .politic {
   font-size: 16px;
   color: #55A630;
   align-self: flex-end;
+}
+.post-top {
+  margin: 37px 0;
+}
+.post-top .block {
+  padding: 36px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.post-top .block .txt {
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 50px;
+  color: #424242;
+  opacity: 0.8;
+  margin-right: 49px;
+}
+.post-top .block .img-block {
+  flex-shrink: 0;
+  width: 590px;
+  height: 547px;
+  position: relative;
+}
+.post-top .block .img-block img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.post-content .text-block {
+  background: #D7FFD3;
+  padding: 91px 44px 86px 40px;
+}
+.post-content .text-block p {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 35px;
+  color: #424242;
+  opacity: 0.8;
+}
+.post-content .text-block p:not(:last-child) {
+  margin-bottom: 35px;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .container {
